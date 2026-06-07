@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANTHEON - Privacy Policy / Política de Privacidade</title>
+    <!-- Favicon & Touch Icon -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-color: #0A0A0A;
+            --border-color: #1A1A1A;
+            --accent-color: #90EE90;
+            --text-color: #FFFFFF;
+            --text-secondary: #888888;
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-y: auto;
+        }
+
+        /* Pure CSS Language Toggle Visibility */
+        body.pt .lang-en { display: none; }
+        body.pt .lang-pt { display: block; }
+        body.en .lang-en { display: block; }
+        body.en .lang-pt { display: none; }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-toggle {
+            display: flex;
+            background-color: #000;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2px;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+
+        .lang-toggle button {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 18px;
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+        }
+
+        .lang-toggle button.active {
+            background-color: var(--text-color);
+            color: #000;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .logo-symbol {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .logo-text-main {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            color: #FFFFFF;
+        }
+
+        .logo-text-sub {
+            font-family: 'Outfit', sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            border-left: 1px solid var(--border-color);
+            padding-left: 12px;
+            text-transform: uppercase;
+        }
+
+        .logo-image {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .last-updated {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            line-height: 1.6;
+            font-size: 14px;
+            color: #DDD;
+        }
+
+        .content h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            color: var(--text-color);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 30px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="pt">
+
+    <div class="container">
+        <!-- Language Switcher -->
+        <div class="lang-toggle">
+            <button id="lang-btn-pt" class="active" onclick="setLanguage('pt')">PT</button>
+            <button id="lang-btn-en" onclick="setLanguage('en')">EN</button>
+        </div>
+
+        <div class="header">
+            <a href="index.html" class="logo-symbol">
+                <img src="apple-touch-icon.png" alt="Pantheon Logo" class="logo-image">
+                <span class="logo-text-main">PANTHEON</span>
+                <span class="logo-text-sub">Workout App</span>
+            </a>
+            
+            <h1 class="lang-pt">Política de Privacidade</h1>
+            <h1 class="lang-en">Privacy Policy</h1>
+            
+            <p class="last-updated lang-pt">ÚLTIMA ATUALIZAÇÃO: 7 DE JUNHO DE 2026</p>
+            <p class="last-updated lang-en">LAST UPDATED: JUNE 7, 2026</p>
+        </div>
+
+        <div class="content">
+            <!-- PORTUGUESE CONTENT -->
+            <div class="lang-pt">
+                <p>Esta política de privacidade descreve como o aplicativo <strong>Pantheon</strong> ("nós", "nosso" ou "o aplicativo") lida com suas informações pessoais.</p>
+                
+                <h2>1. Coleta e Armazenamento de Dados</h2>
+                <p>O Pantheon foi desenvolvido sob a filosofia de soberania de dados offline. Isso significa que:</p>
+                <ul>
+                    <li><strong>Sem Armazenamento em Nuvem:</strong> Todo o seu histórico de treinos, planos, exercícios e estatísticas são salvos exclusivamente no banco de dados local (SQLite) do seu dispositivo móvel.</li>
+                    <li><strong>Sem Transmissão:</strong> Nós não enviamos nem sincronizamos suas informações com servidores de terceiros ou serviços em nuvem gerenciados por nós. Suas informações de saúde e treinos permanecem 100% sob seu controle físico no aparelho.</li>
+                </ul>
+
+                <h2>2. Permissões do Dispositivo</h2>
+                <p>Para fornecer a melhor experiência de forja física, o aplicativo solicita as seguintes permissões do sistema:</p>
+                <ul>
+                    <li><strong>Notificações:</strong> Usadas unicamente para alertá-lo quando os tempos de descanso dos exercícios terminarem. Nenhuma notificação é usada para fins de marketing ou anúncios.</li>
+                    <li><strong>Vibração:</strong> Usada para dar feedback háptico ao marcar séries concluídas ou alertar o fim do descanso.</li>
+                </ul>
+
+                <h2>3. Exclusão e Exportação de Dados</h2>
+                <p>Você tem controle total sobre os dados armazenados:</p>
+                <ul>
+                    <li><strong>Limpeza Completa:</strong> A qualquer momento, através da seção "Dados" nas Configurações, você pode executar o comando "Extinguir Registros". Isso apagará permanentemente todo o histórico de treinos e logs do dispositivo de maneira irreversível.</li>
+                    <li><strong>Backup do Templo:</strong> Você pode exportar uma cópia do seu banco de dados para seu próprio armazenamento (Google Drive, e-mail, etc.) ou importar backups criados anteriormente. Nós não temos acesso a esses backups.</li>
+                </ul>
+
+                <h2>4. Serviços de Terceiros</h2>
+                <p>O Pantheon não inclui redes de anúncios (como AdMob) ou SDKs de terceiros para rastrear suas atividades ou perfil de comportamento.</p>
+
+                <h2>5. Alterações a Esta Política</h2>
+                <p>Podemos atualizar nossa política de privacidade de tempos em tempos. Quaisquer alterações serão atualizadas nesta página e estarão disponíveis diretamente no site oficial.</p>
+
+                <h2>6. Contato</h2>
+                <p>Se você tiver alguma dúvida sobre a privacidade dos seus dados ou sobre o funcionamento do aplicativo, entre em contato com o desenvolvedor:</p>
+                <p>Desenvolvido por: Fernando Falat<br>
+                Website: <a href="https://pantheonworkout.app" style="color: var(--accent-color); text-decoration: none;">pantheonworkout.app</a></p>
+            </div>
+
+            <!-- ENGLISH CONTENT -->
+            <div class="lang-en">
+                <p>This Privacy Policy describes how the <strong>Pantheon</strong> mobile application ("we", "our", or "the app") handles your personal information.</p>
+                
+                <h2>1. Data Collection and Storage</h2>
+                <p>Pantheon is built on the philosophy of offline data sovereignty. This means:</p>
+                <ul>
+                    <li><strong>No Cloud Storage:</strong> All your workout history, custom plans, splits, and analytics are saved exclusively in a local database (SQLite) on your mobile device.</li>
+                    <li><strong>No Sinking/Transmitting:</strong> We do not transmit, upload, or sync your information to external servers or remote databases. Your workout data remains 100% under your physical possession on your device.</li>
+                </ul>
+
+                <h2>2. Device Permissions</h2>
+                <p>To provide a high-quality fitness logging experience, the app requires the following device permissions:</p>
+                <ul>
+                    <li><strong>Notifications:</strong> Used solely to alert you when your rest timer expires. We do not send promotional notifications.</li>
+                    <li><strong>Vibration:</strong> Used for haptic feedback when completing sets or alerting you when rest is complete.</li>
+                </ul>
+
+                <h2>3. Data Deletion and Portability</h2>
+                <p>You have full authority over your data:</p>
+                <ul>
+                    <li><strong>Total Wipe:</strong> At any time, via the "Data Management" section in Settings, you can execute "Extinguish Records". This will permanently and irreversibly wipe all workout history and logs from your device.</li>
+                    <li><strong>Temple Backup:</strong> You can export a copy of your database to your own storage (Google Drive, email, local file system) or import a previous backup file. We never see or have access to these files.</li>
+                </ul>
+
+                <h2>4. Third-Party Services</h2>
+                <p>Pantheon does not include ad networks (like AdMob) or tracking SDKs to profile your behavior or track your activities.</p>
+
+                <h2>5. Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page and made available through our landing page website.</p>
+
+                <h2>6. Contact Us</h2>
+                <p>If you have any questions or feedback about this privacy policy, please contact the developer:</p>
+                <p>Developed by: Fernando Falat<br>
+                Website: <a href="https://pantheonworkout.app" style="color: var(--accent-color); text-decoration: none;">pantheonworkout.app</a></p>
+            </div>
+            
+            <a href="index.html" class="back-link">
+                &larr; <span class="lang-pt">Voltar para a Home</span><span class="lang-en">Back to Home</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'pt';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('user-lang', lang);
+            
+            // Toggle body class
+            document.body.className = lang;
+            
+            // Set document attribute
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+            
+            // Toggle active status on buttons
+            document.getElementById("lang-btn-pt").classList.toggle("active", lang === 'pt');
+            document.getElementById("lang-btn-en").classList.toggle("active", lang === 'en');
+        }
+
+        // Initialize language
+        const storedLang = localStorage.getItem('user-lang');
+        let initialLang = 'pt';
+        if (storedLang) {
+            initialLang = storedLang.startsWith('pt') ? 'pt' : 'en';
+        } else {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang && !userLang.startsWith('pt')) {
+                initialLang = 'en';
+            }
+        }
+        setLanguage(initialLang);
+    </script>
+</body>
+</html>
