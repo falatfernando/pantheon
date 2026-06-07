@@ -170,6 +170,15 @@
             line-height: 1.15;
         }
 
+        .developer-tag {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: -10px;
+            margin-bottom: -5px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
         .description {
             font-size: 15px;
             color: #888;
@@ -987,6 +996,7 @@
             <div class="hero-content">
                 <span class="tagline" id="hero-tagline">SEM ANÚNCIOS. SEM PAYWALLS. APENAS INTENÇÃO.</span>
                 <h1 id="hero-title">Feito para o treino, não para os anúncios</h1>
+                <div class="developer-tag" id="developer-tag">Feito por Fernando Falat</div>
                 <p class="description" id="hero-desc">
                     O Pantheon foi construído por um cara de academia cansado de aplicativos que bloqueiam sua evolução com paywalls, enchem sua tela de anúncios e vendem seus dados. Este é um templo de treino premium, 100% offline e livre de distrações. Estética P&B limpa, registro local veloz e zero assinaturas.
                 </p>
@@ -1471,6 +1481,7 @@
             pt: {
                 heroTagline: "SEM ANÚNCIOS. SEM PAYWALLS. APENAS INTENÇÃO.",
                 heroTitle: "Feito para o treino, não para os anúncios",
+                devTag: "Feito por Fernando Falat",
                 heroDesc: "O Pantheon foi construído por um cara de academia cansado de aplicativos que bloqueiam sua evolução com paywalls, enchem sua tela de anúncios e vendem seus dados. Este é um templo de treino premium, 100% offline e livre de distrações. Estética P&B limpa, registro local veloz e zero assinaturas.",
                 btnDownload: "Baixar APK (Beta 1.4)",
                 btnTribute: "Oferecer Tributo",
@@ -1517,6 +1528,7 @@
             en: {
                 heroTagline: "NO ADS. NO PAYWALLS. JUST INTENT.",
                 heroTitle: "Built for the lift, not for the ads",
+                devTag: "Made by Fernando Falat",
                 heroDesc: "Pantheon was built by a gym guy fed up with apps that block your progress with paywalls, spam you with ads, and sell your data. This is a premium, 100% offline, distraction-free temple for your training. Clean B&W aesthetics, fast local tracking, and zero subscriptions.",
                 btnDownload: "Download APK (Beta 1.4)",
                 btnTribute: "Offer a Tribute",
@@ -1592,6 +1604,7 @@
             // Hero section updates
             document.getElementById("hero-tagline").innerText = translations[lang].heroTagline;
             document.getElementById("hero-title").innerText = translations[lang].heroTitle;
+            document.getElementById("developer-tag").innerText = translations[lang].devTag;
             document.getElementById("hero-desc").innerText = translations[lang].heroDesc;
             document.getElementById("btn-download").innerText = translations[lang].btnDownload;
             document.getElementById("btn-tribute").innerText = translations[lang].btnTribute;
