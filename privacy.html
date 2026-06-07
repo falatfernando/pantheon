@@ -196,6 +196,47 @@
         .back-link:hover {
             opacity: 0.8;
         }
+
+        /* Responsive Layouts */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+            .container {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+            .lang-toggle {
+                position: static;
+                margin: 0 auto 20px auto;
+                width: fit-content;
+            }
+            .logo-symbol {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                margin-bottom: 15px;
+            }
+            .logo-text-main {
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+            .logo-text-sub {
+                border-left: none;
+                padding-left: 0;
+                font-size: 10px;
+            }
+            .header {
+                text-align: center;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            h1 {
+                font-size: 22px;
+                line-height: 1.3;
+            }
+        }
     </style>
 </head>
 <body class="pt">
