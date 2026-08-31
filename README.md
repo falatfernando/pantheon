@@ -10,7 +10,7 @@ The live page is deployed at [pantheonworkout.app](https://pantheonworkout.app/)
 
 This is a clean, static front-end repository optimized for high-performance and lightweight hosting on GitHub Pages:
 
-*   **[index.html](file:///home/falat/Repositories/pantheon-page/index.html)**: The main landing page, featuring a detailed feature showcase, download links for the Android APK releases, and a high-fidelity interactive phone mockup of the app.
+*   **[index.html](file:///home/falat/Repositories/pantheon-page/index.html)**: The main landing page, featuring a detailed feature showcase, Google Play Store redirect with automatic language localization, and a high-fidelity interactive phone mockup of the app.
 *   **[tribute.html](file:///home/falat/Repositories/pantheon-page/tribute.html)**: The tribute/donation page that allows users to support the developer off-app (complying with app store guidelines) using Pix, Ko-fi, or Buy Me A Coffee.
 *   **[CNAME](file:///home/falat/Repositories/pantheon-page/CNAME)**: Configuration file mapping the GitHub Pages site to the custom domain `pantheonworkout.app`.
 *   **Assets**: Minimalist design system assets (SVG logo, multi-resolution app icons, and favicons).
